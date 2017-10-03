@@ -1,6 +1,6 @@
 //
 //  AndroidPlatformGen.swift
-//  PolymorphSwiftGen
+//  PolymorphAndroidGen
 //
 //  Created by Benoit BRIATTE on 09/08/2017.
 //
@@ -25,19 +25,9 @@ public class AndroidPlatformGen: PlatformGen {
 
     public func models(_ models: Models, options: PolymorphGen.Options) throws -> [File] {
         var files: [File] = []
-        /*
-        let classDependencyModuleFileBuilder = ClassDependencyModuleFileBuilder()
         try models.classes.values.forEach {
-            files.append(contentsOf: try ClassFileBuilderManager.default.build(element: $0, options: options))
-            if $0.injectable || $0.serializable {
-                classDependencyModuleFileBuilder.bind($0.name, to: "\($0.name)Model")
-            }
+            files.append(contentsOf: try AndroidClassFileBuilderManager.default.build(element: $0, options: options))
         }
-        if classDependencyModuleFileBuilder.dependencies.count > 0 {
-            files.append(try classDependencyModuleFileBuilder.build(models: models, options: options))
-        }
- */
-        print("test")
         return files
     }
 }

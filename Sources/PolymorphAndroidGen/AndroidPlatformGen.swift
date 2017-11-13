@@ -31,4 +31,3 @@ public class AndroidPlatformGen: PlatformGen {
         return files
     }
 }
-

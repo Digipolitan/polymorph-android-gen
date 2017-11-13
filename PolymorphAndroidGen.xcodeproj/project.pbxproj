@@ -457,7 +457,7 @@
 			path = Writers;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -467,7 +467,6 @@
 				OBJ_28 /* Dependencies */,
 				OBJ_89 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_53 /* CodeWriter */ = {
@@ -665,6 +664,7 @@
 			buildPhases = (
 				OBJ_161 /* Sources */,
 				OBJ_171 /* Frameworks */,
+				A33B2CA81FBA2609009A94FA /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -824,7 +824,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -846,6 +846,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A33B2CA81FBA2609009A94FA /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_101 /* Sources */ = {

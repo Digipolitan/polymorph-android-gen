@@ -15,7 +15,7 @@ class AndroidClassFileBuilderManager: ClassFileBuilderArray {
 
     private init() {
         super.init(children: [
-            ClassDefinitionFileBuilder.default,
+            ClassDefinitionFileBuilder.default
         ])
     }
 }

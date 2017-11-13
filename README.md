@@ -4,7 +4,8 @@ PolymorphAndroidGen
 [![Swift Package Manager](https://rawgit.com/jlyonsmith/artwork/master/SwiftPackageManager/swiftpackagemanager-compatible.svg)](https://swift.org/package-manager/)
 [![Twitter](https://img.shields.io/badge/twitter-@Digipolitan-blue.svg?style=flat)](http://twitter.com/Digipolitan)
 
-String extension to write camelCase string and snakeCase string
+Android implementation of [PlatformGen](https://github.com/Digipolitan/polymorph-gen)
+- Empty generation
 
 ## Installation
 
@@ -30,11 +31,6 @@ let package = Package(
     ]
 )
 ```
-
-## The Basics
-
-Android implementation of [PlatformGen](https://github.com/Digipolitan/polymorph-gen)
-- Empty generation
 
 ## Contributing
 
